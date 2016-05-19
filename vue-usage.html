@@ -27,6 +27,22 @@
                         http://kangax.github.io/compat-table/es5/
                     </script>    
                 </section>
+                <section>
+                        <h2>MVVM</h2>
+                        <img src="./img/vue-usage/mvvm.png">   
+                </section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ### 原来的php模板
+                        `<div id="app"><?=$message?></div>`
+                        ### 使用MVVM框架
+                        `<div id="app">{{message}}<div>`
+                    </script>   
+                </section>
+                <section>
+                        <h2>Vue结构</h2>
+                        <img width="530px" src="./img/vue-usage/vue-component.png">   
+                </section>
                 <section data-markdown>
                     <script type="text/template">
                         ## 初识Vue
@@ -62,10 +78,6 @@
                         <p>Vue > React > jQuery > Angular1</p>
                 </section>
                 <section>
-                        <h2>Vue结构</h2>
-                        <img width="530px" src="./img/vue-usage/vue-component.png">   
-                </section>
-                <section>
                         <h2>数据双向绑定</h2>  
                 </section>
                 <section>
@@ -92,6 +104,73 @@
                         <h2>简单用法</h2>  
                         <iframe height='450' scrolling='no' src='http://codepen.io/elle_xu/embed/pyxKrL/?height=450&theme-id=16792&default-tab=js&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/elle_xu/pen/pyxKrL/'>Vue-Resource</a> by elle (<a href='http://codepen.io/elle_xu'>@elle_xu</a>) on <a href='http://codepen.io'>CodePen</a>.
                         </iframe>
+                </section>
+                <section>
+                    <h2>组件</h2>
+                </section>
+                <section>
+                    <h2>简单用法</h2>
+                    <img src="./img/vue-usage/vue-component-1.png">
+                </section>
+                <section>
+                    <h2>局部注册</h2>
+                    <img src="./img/vue-usage/vue-component-2.png">
+                </section>
+                <section>
+                    <h2>Props</h2>
+                    <p>父组件传递数据给子组件</p>
+                </section>
+                <section>
+                    <h2>camelCase vs. kebab-case</h2>
+                    <iframe height='450' scrolling='no' src='http://codepen.io/elle_xu/embed/PNxZMw/?height=450&theme-id=16792&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/elle_xu/pen/PNxZMw/'>vue-com-prop1</a> by elle (<a href='http://codepen.io/elle_xu'>@elle_xu</a>) on <a href='http://codepen.io'>CodePen</a>.
+                    </iframe>
+                </section>
+                <section>
+                    <h2>动态Props</h2>
+                    <p>:some-prop="param"取动态值</p>
+                    <iframe height='450' scrolling='no' src='http://codepen.io/elle_xu/embed/reQeBJ/?height=300&theme-id=16792&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/elle_xu/pen/reQeBJ/'>vue-com-prop2</a> by elle (<a href='http://codepen.io/elle_xu'>@elle_xu</a>) on <a href='http://codepen.io'>CodePen</a>.
+                    </iframe>
+                </section>
+                <section>
+                    <h2>Prop验证</h2>
+                    <p>可指定类型、默认值、绑定类型、自定义验证及转换函数</p>
+                    <iframe height='450' scrolling='yes' src='http://codepen.io/elle_xu/embed/ONrxbP/?height=450&theme-id=16792&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/elle_xu/pen/ONrxbP/'>vue-com-prop3</a> by elle (<a href='http://codepen.io/elle_xu'>@elle_xu</a>) on <a href='http://codepen.io'>CodePen</a>.
+                    </iframe>
+                </section>
+                <section>
+                    <h2>父子组件通信</h2>
+                </section>
+                <section>
+                    <ul style="width: 100%;font-size: 34px;">
+                        <p>1.访问元素</p>
+                        <li>可以访问所有元素</li>
+                        <li>尽量避免直接依赖父组件数据，在子组件中修改父组件状态</li>
+                    </ul>
+                    <div style="text-align: middle"><img src="./img/vue-usage/vue-event-1.png"></div>              
+                    <ul style="width: 100%;font-size: 34px;">
+                        <p>2.事件</p>
+                        <li>事件和回调传递</li>
+                    </ul>
+                    <div style="text-align: middle"><img src="./img/vue-usage/vue-event-2.png"></div>     
+                </section>
+                <section>
+                    <h2>例子</h2>
+                    <iframe height='450' scrolling='no' src='http://codepen.io/elle_xu/embed/wGRrmW/?height=450&theme-id=16792&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/elle_xu/pen/wGRrmW/'>vue-com-com1</a> by elle (<a href='http://codepen.io/elle_xu'>@elle_xu</a>) on <a href='http://codepen.io'>CodePen</a>.
+                    </iframe>
+                </section>
+                <section>
+                    <h2>更直观的写法</h2>
+                    <iframe height='450' scrolling='true' src='http://codepen.io/elle_xu/embed/wGRrEz/?height=450&theme-id=16792&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/elle_xu/pen/wGRrEz/'>vue-com-com2</a> by elle (<a href='http://codepen.io/elle_xu'>@elle_xu</a>) on <a href='http://codepen.io'>CodePen</a>.
+                    </iframe>
+                </section>
+                <section>
+                    <h2>Slot</h2>
+                    <p>外部环境插入内容到组件的视图结构内</p>
+                </section>
+                <section>
+                    <h2>匿名slot和具名slot</h2>
+                    <iframe height='450' scrolling='no' src='http://codepen.io/elle_xu/embed/zqyPRg/?height=450&theme-id=16792&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/elle_xu/pen/zqyPRg/'>vue-com-slot1</a> by elle (<a href='http://codepen.io/elle_xu'>@elle_xu</a>) on <a href='http://codepen.io'>CodePen</a>.
+                    </iframe>
                 </section>
                 <section>
                     <h2>路由Vue-Router</h2>
@@ -134,73 +213,6 @@
                     <img src="./img/vue-usage/require1.jpg">
                 </section>
                 <section>
-                    <h2>组件</h2>
-                </section>
-                <section>
-                    <h2>简单用法</h2>
-                    <img src="./img/vue-usage/vue-component-1.png">
-                </section>
-                <section>
-                    <h2>局部注册</h2>
-                    <img src="./img/vue-usage/vue-component-2.png">
-                </section>
-                <section>
-                    <h2>Props</h2>
-                    <p>父组件传递数据给子组件</p>
-                </section>
-                <section>
-                    <h2>camelCase vs. kebab-case</h2>
-                    <iframe height='450' scrolling='no' src='http://codepen.io/elle_xu/embed/PNxZMw/?height=450&theme-id=16792&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/elle_xu/pen/PNxZMw/'>vue-com-prop1</a> by elle (<a href='http://codepen.io/elle_xu'>@elle_xu</a>) on <a href='http://codepen.io'>CodePen</a>.
-                    </iframe>
-                </section>
-                <section>
-                    <h2>动态Props</h2>
-                    <p>:some-prop="param"取动态值</p>
-                    <iframe height='450' scrolling='no' src='http://codepen.io/elle_xu/embed/PNxZMw/?height=450&theme-id=16792&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/elle_xu/pen/PNxZMw/'>vue-com-prop1</a> by elle (<a href='http://codepen.io/elle_xu'>@elle_xu</a>) on <a href='http://codepen.io'>CodePen</a>.
-                    </iframe>
-                </section>
-                <section>
-                    <h2>Prop验证</h2>
-                    <p>可指定类型、默认值、绑定类型、自定义验证及转换函数</p>
-                    <iframe height='450' scrolling='yes' src='http://codepen.io/elle_xu/embed/ONrxbP/?height=450&theme-id=16792&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/elle_xu/pen/ONrxbP/'>vue-com-prop3</a> by elle (<a href='http://codepen.io/elle_xu'>@elle_xu</a>) on <a href='http://codepen.io'>CodePen</a>.
-                    </iframe>
-                </section>
-                <section>
-                    <h2>父子组件通信</h2>
-                </section>
-                <section>
-                    <ul style="width: 100%;font-size: 34px;">
-                        <p>1.访问元素</p>
-                        <li>可以访问所有元素</li>
-                        <li>尽量避免直接依赖父组件数据，在子组件中修改父组件状态</li>
-                    </ul>
-                    <div style="text-align: middle"><img src="./img/vue-usage/vue-event-1.png"></div>              
-                    <ul style="width: 100%;font-size: 34px;">
-                        <p>2.事件</p>
-                        <li>事件和回调传递</li>
-                    </ul>
-                    <div style="text-align: middle"><img src="./img/vue-usage/vue-event-2.png"></div>     
-                </section>
-                <section>
-                    <h2>例子</h2>
-                    <iframe height='450' scrolling='no' src='http://codepen.io/elle_xu/embed/wGRrmW/?height=450&theme-id=16792&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/elle_xu/pen/wGRrmW/'>vue-com-com1</a> by elle (<a href='http://codepen.io/elle_xu'>@elle_xu</a>) on <a href='http://codepen.io'>CodePen</a>.
-                    </iframe>
-                </section>
-                <section>
-                    <h2>更直观的写法</h2>
-                    <iframe height='450' scrolling='no' src='http://codepen.io/elle_xu/embed/wGRrEz/?height=450&theme-id=16792&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/elle_xu/pen/wGRrEz/'>vue-com-com2</a> by elle (<a href='http://codepen.io/elle_xu'>@elle_xu</a>) on <a href='http://codepen.io'>CodePen</a>.
-                    </iframe>
-                </section>
-                <section>
-                    <h2>Slot</h2>
-                    <p>外部环境插入内容到组件的视图结构内</p>
-                </section>
-                <section>
-                    <h2>匿名slot和具名slot</h2>
-                    <iframe height='450' scrolling='no' src='http://codepen.io/elle_xu/embed/zqyPRg/?height=450&theme-id=16792&default-tab=html,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/elle_xu/pen/zqyPRg/'>vue-com-slot1</a> by elle (<a href='http://codepen.io/elle_xu'>@elle_xu</a>) on <a href='http://codepen.io'>CodePen</a>.
-                    </iframe>
-                </section>
-                <section>
                     <h2>谢谢</h2>
                 </section>
             </div>
@@ -213,7 +225,7 @@
                     // { src: '../../lib/js/classList.js', condition: function() { return !document.body.classList; } },
                     { src: 'js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
                     { src: 'js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                    // { src: '../highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    // { src: 'js/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
                     // { src: '../notes/notes.js' }
                 ]
             });
